@@ -1,0 +1,255 @@
+[
+    {
+        "productId": 1001,
+        "title": "Samsung Galaxy S21",
+        "brand": "Samsung",
+        "image": "https://i.postimg.cc/fymgrwf6/Galaxy-S21-FE-5-G-Navy-Blue-6635.jpg",
+        "category": "Smartphone",
+        "price": 799.99,
+        "description": "A flagship smartphone with high performance, excellent camera quality, and vibrant display.",
+        "specifications": {
+            "processor": "Exynos 2100",
+            "storage": "128GB",
+            "ram": "8GB",
+            "battery": "4000mAh",
+            "screenSize": "6.2 inches"
+        },
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "productId": 1002,
+        "title": "Apple iPad Air",
+        "brand": "Apple",
+        "image": "https://i.postimg.cc/QCFss4m1/1554-51588.jpg",
+        "category": "Tablet",
+        "price": 599.99,
+        "description": "Lightweight and powerful tablet with a large display, ideal for both work and play.",
+        "specifications": {
+            "processor": "Apple A14 Bionic",
+            "storage": "256GB",
+            "ram": "4GB",
+            "battery": "7600mAh",
+            "screenSize": "10.9 inches"
+        },
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "productId": 1003,
+        "title": "Dell XPS 15",
+        "brand": "Dell",
+        "image": "https://i.postimg.cc/1zMZFhYD/dell-xps-15-9510-intel-core-i9-11900h-156-inch-11639551385.webp",
+        "category": "Laptop",
+        "price": 1299.99,
+        "description": "High-performance laptop with a sleek design and stunning 4K display option.",
+        "specifications": {
+            "processor": "Intel Core i7",
+            "storage": "512GB SSD",
+            "ram": "16GB",
+            "battery": "86WHr",
+            "screenSize": "15.6 inches"
+        },
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "productId": 1004,
+        "title": "Apple Watch Series 7",
+        "brand": "Apple",
+        "image": "https://i.postimg.cc/5tDgdhy1/Apple-watch-series7-hero-09142021-big-jpg-large.jpg",
+        "category": "Smartwatch",
+        "price": 399.99,
+        "description": "Advanced smartwatch with fitness tracking, ECG, and blood oxygen monitoring.",
+        "specifications": {
+            "processor": "Apple S7",
+            "storage": "32GB",
+            "battery": "18 hours",
+            "screenSize": "1.9 inches"
+        },
+        "availability": false,
+        "rating": 4.7
+    },
+    {
+        "productId": 1005,
+        "title": "Microsoft Surface Laptop 4",
+        "image": "https://i.postimg.cc/SKtVzgqg/2-4.jpg",
+        "category": "Laptop",
+        "price": 999.99,
+        "description": "Sleek and stylish laptop with PixelSense display, ideal for productivity.",
+        "specifications": {
+            "processor": "AMD Ryzen 5 4680U",
+            "storage": "256GB SSD",
+            "ram": "8GB",
+            "battery": "11.5 hours",
+            "screenSize": "13.5 inches",
+            "resolution": "2256x1504"
+        },
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "productId": 1006,
+        "title": "Sony WF-1000XM4",
+        "brand": "Sony",
+        "image": "https://i.postimg.cc/KY3HGXhZ/sony-wf-1000xm4-true-wireless-noise-cancelling-earbuds-8.jpg",
+        "category": "Earbuds",
+        "price": 279.99,
+        "description": "True wireless earbuds with industry-leading noise cancellation and excellent sound quality.",
+        "specifications": {
+            "battery": "24 hours with case",
+            "connectivity": "Bluetooth 5.2",
+            "waterproof": "IPX4",
+            "noiseCancellation": "Yes"
+        },
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "productId": 1007,
+        "title": "Xiaomi Pad 5",
+        "image": "https://i.postimg.cc/nc75ffZp/padxiaomi-800x800.png",
+        "category": "Tablet",
+        "price": 399.99,
+        "description": "The Xiaomi Pad 5 features a stunning display, powerful Snapdragon processor, and supports a stylus for enhanced productivity.",
+        "specifications": {
+            "processor": "Qualcomm Snapdragon 860",
+            "storage": "128GB",
+            "ram": "6GB",
+            "batteryLife": "10 hours",
+            "screenSize": "11 inches",
+            "resolution": "2560x1600",
+            "connectivity": "Wi-Fi 5, Bluetooth 5.0"
+        },
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "productId": 1008,
+        "title": "Google Pixel Watch",
+        "image": "https://i.postimg.cc/7LPQzCzZ/204684af87d6d1841002a71fc6e2946b-jpg-720x720q80.jpg",
+        "price": 349.99,
+        "category": "Smartwatch",
+        "description": "Google's first smartwatch with a sleek design, Wear OS, and integrated Fitbit health tracking.",
+        "specifications": {
+            "processor": "Exynos 9110",
+            "storage": "32GB",
+            "ram": "2GB",
+            "battery": "24 hours",
+            "connectivity": "Wi-Fi, Bluetooth, LTE (optional)",
+            "screenSize": "1.2 inches",
+            "waterResistance": "5 ATM"
+        },
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "productId": 1009,
+        "title": "Apple MacBook Air M1",
+        "image": "https://i.postimg.cc/SQn3VzvX/Apple-new-macbookair-wallpaper-screen-11102020-big-jpg-large.jpg",
+        "category": "Laptop",
+        "price": 999.99,
+        "description": "Lightweight and powerful laptop with the M1 chip, delivering exceptional performance and battery life.",
+        "specifications": {
+            "processor": "Apple M1",
+            "storage": "256GB SSD",
+            "ram": "8GB",
+            "battery": "15 hours",
+            "screenSize": "13.3 inches",
+            "resolution": "2560x1600"
+        },
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "productId": 1010,
+        "title": "Apple AirPods Pro (2nd Generation)",
+        "image": "https://i.postimg.cc/267f1FPq/mqd83-av5.jpg",
+        "category": "Earbuds",
+        "price": 249.99,
+        "description": "Apple's high-quality wireless earbuds with Active Noise Cancellation, Transparency mode, and spatial audio support.",
+        "specifications": {
+            "chip": "H2 chip",
+            "batteryLife": "6 hours (up to 30 hours with charging case)",
+            "waterResistance": "IPX4",
+            "connectivity": "Bluetooth 5.3",
+            "audioFeatures": "Active Noise Cancellation, Adaptive Transparency, Personalized Spatial Audio"
+        },
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "productId": 1011,
+        "title": "HP Spectre x360",
+        "image": "https://i.postimg.cc/2jLK9xHn/HP-Spectre-x360-2-In-1-Laptop-Review-4-1024x694.webp",
+        "category": "Laptop",
+        "price": 1399.99,
+        "description": "Versatile 2-in-1 laptop with stunning 4K display and excellent performance for creatives.",
+        "specifications": {
+            "processor": "Intel Core i7-1165G7",
+            "storage": "1TB SSD",
+            "ram": "16GB",
+            "battery": "13 hours",
+            "screenSize": "13.3 inches",
+            "resolution": "3840x2160"
+        },
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "productId": 1012,
+        "title": "Asus ROG Zephyrus G14",
+        "image": "https://i.postimg.cc/pXGRQCyz/asus-rog-zephyrus-g14-ga403u-uqs096w-14-3k-120hz-gaming-laptop-ryzen-9-8945hs-16gb-1tb-ssd-rtx4050-6.jpg",
+        "category": "Laptop",
+        "price": 1499.99,
+        "description": "Powerful gaming laptop with Ryzen processor and high refresh rate display.",
+        "specifications": {
+            "processor": "AMD Ryzen 9 5900HS",
+            "storage": "1TB SSD",
+            "ram": "16GB",
+            "battery": "10 hours",
+            "screenSize": "14 inches",
+            "resolution": "2560x1440"
+        },
+        "availability": false,
+        "rating": 4.6
+    },
+    {
+        "productId": 1013,
+        "title": "Apple iPhone 15",
+        "image": "https://i.postimg.cc/L5S67sMP/i-Phone-15-Plus-4-7443.jpg",
+        "category": "Smartphone",
+        "price": 999.99,
+        "description": "The latest iPhone with improved camera, A16 Bionic chip, and advanced features for an enhanced user experience.",
+        "specifications": {
+            "processor": "A16 Bionic",
+            "storage": "128GB",
+            "ram": "6GB",
+            "battery": "3279mAh",
+            "screenSize": "6.1 inches",
+            "resolution": "2532x1170",
+            "camera": "48MP main, 12MP ultra-wide",
+            "connectivity": "5G, Wi-Fi 6E, Bluetooth 5.3"
+        },
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "productId": 1014,
+        "title": "Dell XPS 13",
+        "image": "https://i.postimg.cc/R0bgX3KP/Dell-XPS-13-9300-Intel-Core-i7-1065-G7-1-3-GHz-Win-10-Pro-Iris-Plus-Graphics-16-GB-RAM-512-SSD-NVMe-1.webp",
+        "category": "Laptop",
+        "price": 1199.99,
+        "description": "Compact and premium ultrabook with powerful performance and immersive display.",
+        "specifications": {
+            "processor": "Intel Core i7-1165G7",
+            "storage": "512GB SSD",
+            "ram": "16GB",
+            "battery": "10 hours",
+            "screenSize": "13.4 inches",
+            "resolution": "1920x1200"
+        },
+        "availability": true,
+        "rating": 4.8
+    }
+]
