@@ -1,8 +1,16 @@
-# React + Vite
+<h1>Project Name:</h1>
+Gadget Heaven
+<h1>Five Feature of my website:</h1>
+1. using react routing SPA webpage.
+2. Categories data loading.
+3. using local storage to add cart/wishlist.
+4. Dynamic Navbar using Nav link.
+5. Short By Price.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>Handling Data:</h2>
+Using Local Storage Handling Data.
 
-Currently, two official plugins are available:
+<h1>Requirement/Repository link:</h1>
+https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-jyoti-prokash
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h1>Live Link:</h1>
