@@ -28,6 +28,14 @@ const Dashboard = () => {
     setWishList(storeWish)
   },[])
 
+  // short by price
+
+  const handleShort = sortBy => {
+    if(sortBy=='price'){
+      const sorted = [...allData].sort((a,b)=>b.price-a.price);
+      setCartList(sorted);
+    }
+  }
 
   return (
     <div>
@@ -54,8 +62,8 @@ const Dashboard = () => {
                 </div>
                 <div className="flex gap-5 justify-center items-center">
                   <h2 className="mr-5 text-2xl font-bold">Total cost: 0</h2>
-                  <button className="btn rounded-3xl border-[#9538E2] text-[#9538E2] text-lg font-semibold">
-                    Short By price
+                  <button onClick={()=>handleShort('price')} className="btn rounded-3xl border-[#9538E2] text-[#9538E2] text-lg font-semibold">
+                    Sort By price
                   </button>
                   <button className="btn rounded-3xl bg-[#9538E2] text-white">
                     Purchase
