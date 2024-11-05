@@ -4,13 +4,14 @@ import Navbar from "../Components/Navbar";
 
 
 const MainLayouts = () => {
+
     return (
         <div className="container mx-auto">
-            <div className="">
+            <div>
             <Navbar></Navbar>
             </div>
             <Outlet></Outlet>
-            <div>
+            <div className="mt-96">
             <Footer></Footer>
             </div>
         </div>

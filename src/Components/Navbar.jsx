@@ -1,6 +1,6 @@
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaRegHeart } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const links = (
     <>
@@ -42,18 +42,18 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="text-xl">Gadget Heaven</a>
+        <Link to="/" className="text-xl font-semibold">Gadget Heaven</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-      <div className="navbar-end gap-4">
-        <a>
+      <div className="navbar-end gap-4 text-xl">
+        <Link to="dashboard">
           <AiOutlineShoppingCart />
-        </a>
-        <a>
+        </Link>
+        <Link to="dashboard">
           <FaRegHeart />
-        </a>
+        </Link>
       </div>
     </div>
   );
