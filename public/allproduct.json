@@ -1,0 +1,134 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "iPhone 13 Pro",
+    "product_image": "https://i.ibb.co.com/cYFLdFP/i.jpg",
+    "category": "iphone",
+    "price": 999,
+    "description": "Latest iPhone model with a powerful A15 chip and triple camera system.",
+    "Specification": ["6.1-inch Super Retina XDR", "128GB Storage", "5G Support"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 2,
+    "product_title": "MacBook Pro 14",
+    "product_image": "https://i.ibb.co.com/0JgGQqV/0x0.webp",
+    "category": "macBook",
+    "price": 1999,
+    "description": "Powerful MacBook Pro with M1 Pro chip and high-resolution display.",
+    "Specification": ["M1 Pro Chip", "14-inch Liquid Retina XDR", "512GB SSD"],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 3,
+    "product_title": "Galaxy S21",
+    "product_image": "https://i.ibb.co.com/Htf3B3K/6aa49a3c-5684-4bc1-b55a-77229ebc125521170633.jpg",
+    "category": "iphone",
+    "price": 799,
+    "description": "Samsung Galaxy S21 with 5G support and high-quality camera.",
+    "Specification": ["6.2-inch Dynamic AMOLED", "128GB Storage", "5G Support"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 4,
+    "product_title": "MacBook Air M1",
+    "product_image": "https://i.ibb.co.com/0r0n1Df/cara-screenshot-di-macbook-5.jpg",
+    "category": "macBook",
+    "price": 999,
+    "description": "Lightweight MacBook Air powered by the M1 chip.",
+    "Specification": ["M1 Chip", "13.3-inch Retina", "256GB SSD"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 5,
+    "product_title": "Apple Watch Series 7",
+    "product_image": "https://i.ibb.co.com/zJ64kJw/pexels-photo-437037.jpg",
+    "category": "smart watch",
+    "price": 399,
+    "description": "Smart watch with health tracking and fitness features.",
+    "Specification": ["Always-On Retina Display", "GPS", "Heart Rate Monitor"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 6,
+    "product_title": "Dell XPS 13",
+    "product_image": "https://i.ibb.co.com/d2bjDP6/apple-macbook-air-m3-cnnu-lead-options-8.jpg",
+    "category": "laptop",
+    "price": 1299,
+    "description": "Powerful and compact laptop with InfinityEdge display.",
+    "Specification": ["Intel i7", "13.4-inch FHD+", "512GB SSD"],
+    "availability": false,
+    "rating": 4.7
+  },
+  {
+    "product_id": 7,
+    "product_title": "Samsung Galaxy Watch 4",
+    "product_image": "https://i.ibb.co.com/3Y1rKNB/rendering-smart-home-device-23-2151039316.jpg",
+    "category": "smart watch",
+    "price": 249,
+    "description": "Smart watch with health monitoring and workout tracking.",
+    "Specification": ["Super AMOLED Display", "Heart Rate Monitor", "Sleep Tracking"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 8,
+    "product_title": "Lenovo ThinkPad X1",
+    "product_image": "https://i.ibb.co.com/52gJTXS/photo-1611078489935-0cb964de46d6.jpg",
+    "category": "laptop",
+    "price": 1499,
+    "description": "Durable business laptop with advanced security features.",
+    "Specification": ["Intel i7", "14-inch FHD", "1TB SSD"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 9,
+    "product_title": "iPhone 12",
+    "product_image": "https://i.ibb.co.com/b5kpZRF/52421386363-8747a89956-o.jpg",
+    "category": "iphone",
+    "price": 699,
+    "description": "Affordable iPhone with high-resolution dual-camera system.",
+    "Specification": ["6.1-inch Super Retina XDR", "64GB Storage", "5G Support"],
+    "availability": false,
+    "rating": 4.5
+  },
+  {
+    "product_id": 10,
+    "product_title": "Apple Watch SE",
+    "product_image": "https://i.ibb.co.com/BthJj9z/istockphoto-1380063784-612x612.jpg",
+    "category": "smart watch",
+    "price": 279,
+    "description": "Affordable Apple Watch with essential features.",
+    "Specification": ["Retina Display", "GPS", "Heart Rate Sensor"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 11,
+    "product_title": "HP Spectre x360",
+    "product_image": "https://i.ibb.co.com/dWG2JYm/photo-1511385348-a52b4a160dc2.jpg",
+    "category": "laptop",
+    "price": 1399,
+    "description": "Convertible laptop with 360-degree hinge and touch display.",
+    "Specification": ["Intel i7", "13.3-inch 4K UHD", "512GB SSD"],
+    "availability": false,
+    "rating": 4.4
+  },
+  {
+    "product_id": 12,
+    "product_title": "iPhone SE",
+    "product_image": "https://i.ibb.co.com/hHr4kG4/Apple-i-Phone-15-Pro-Max-blue-titanium-featured-image-packshot-review.jpg",
+    "category": "iphone",
+    "price": 399,
+    "description": "Compact and affordable iPhone with A13 Bionic chip.",
+    "Specification": ["4.7-inch Retina HD", "64GB Storage", "Touch ID"],
+    "availability": true,
+    "rating": 4.3
+  }
+]

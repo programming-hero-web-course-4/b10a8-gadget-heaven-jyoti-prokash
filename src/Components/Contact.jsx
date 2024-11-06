@@ -1,10 +1,10 @@
 import React from "react";
 import Heading from "./Heading";
-import { toast } from "react-toastify";
+
 
 const Contact = () => {
    const handleSubmit = () =>{
-    toast.success('success')
+    alert('success')
    }
   return (
     <div>

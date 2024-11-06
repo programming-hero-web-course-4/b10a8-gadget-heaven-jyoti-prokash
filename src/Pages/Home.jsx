@@ -1,19 +1,25 @@
-import Gadgets from "../Components/Gadgets/Gadgets";
-import Banner from "../Components/Banner"
-import Category from "../Components/Category";
-import { useLoaderData } from "react-router-dom";
+import { Outlet, useLoaderData } from "react-router-dom";
+import Banner from "../components/Banner";
+import Gadget from "../components/Gadget";
+import Categories from "../components/Categories";
 
 const Home = () => {
     const categories = useLoaderData()
     return (
-        <div className="">
-            <div>
+        <div>
+            {/* banner */}
             <Banner></Banner>
-            </div>
-            
-            <div className="mt-96 flex gap-10">
-                <Category categories={categories}></Category>
-                <Gadgets></Gadgets>
+            {/* explore gadget section */}
+            <Gadget></Gadget>
+            <div className="flex flex-col md:flex-row gap-4">
+                {/* categories section */}
+                <div className='p-6 w-48 bg-gray-300 rounded-xl'>
+                    <Categories categories={categories}></Categories>
+                </div>
+                {/* sub outlet section */}
+                <Outlet></Outlet>
+
+                {/* sub outlet */}
             </div>
         </div>
     );

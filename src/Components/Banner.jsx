@@ -1,27 +1,20 @@
-import React from "react";
-import BannerImg from "../assets/banner.jpg";
-import { Link } from "react-router-dom";
+import bannerImg from '../assets/banner.jpg'
 const Banner = () => {
-  return (
-    <div>
-      <div className="space-y-7 text-center bg-[#9538E2] text-white h-[600px] relative pt-10 rounded-2xl">
-        <h1 className="text-6xl font-bold">
-          Upgrade Your Tech Accessorize with <br /> Gadget Heaven Accessories
-        </h1>
-        <p>
-          Explore the latest gadgets that will take your experience to the next
-          level. From smart devices to <br /> the coolest accessories, we have it all!
-        </p>
-        <Link to="dashboard"><button className="btn mt-5 rounded-3xl text-xl font-bold bg-white text-[#9538E2]">
-          Shop Now
-        </button></Link>
-      </div>
+    return (
+        <div className='mb-72'>
+            <div className="relative text-center  mt-8 py-10 text-gray-200 rounded-xl pb-48 bg-violet-800">
+                <div className="w-9/12 mx-auto space-y-6">
+                    <h1 className="text-5xl">Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
+                    <p className="text-base">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
+                    <div className="btn"><button>Shop Now</button></div>
+                </div>
+            </div>
+            <div className='absolute left-[350px] top-96 max-w-8/12 mx-auto p-6 rounded-xl border'>
+                <img className='rounded-xl h-[300px] w-[600px]' src={bannerImg} alt="" />
+            </div>
+        </div>
 
-      <div className="absolute -bottom-36 left-[400px] p-4 border-4 rounded-3xl mb-16">
-        <img className="w-[1062px] h-[563px] rounded-2xl" src={BannerImg} alt="" />
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Banner;

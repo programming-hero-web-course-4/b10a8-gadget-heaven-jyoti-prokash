@@ -2,7 +2,7 @@ import React from 'react';
 import { FaRegHeart } from "react-icons/fa";
 import { useLoaderData, useParams } from 'react-router-dom';
 import { addStoredCart, addWishList } from './Utility';
-import { toast } from 'react-toastify';
+
 
 const GadgetDetails = () => {
 const {productId} = useParams()

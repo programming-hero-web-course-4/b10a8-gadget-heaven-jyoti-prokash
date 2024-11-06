@@ -1,5 +1,4 @@
-import { json } from "react-router-dom";
-import { toast } from "react-toastify";
+
 
 // getCart items
 const getStoredCart = (id) => {
@@ -14,12 +13,12 @@ const getStoredCart = (id) => {
 const addStoredCart = (id) => {
   const storedList = getStoredCart();
   if (storedList.includes(id)) {
-    toast.warn('Already Added To Cart')
+    alert('Already Added To Cart')
   } else {
     storedList.push(id);
     const storeListStr = JSON.stringify(storedList);
     localStorage.setItem("cart-list", storeListStr);
-    toast.success('Add To Cart')
+    alert('Add To Cart')
   }
 };
 // get wishlist
@@ -36,13 +35,13 @@ const getWishList = (id) =>{
 const addWishList = (id) =>{
     const wishList = getWishList();
     if(wishList.includes(id)){
-        toast.warn('Already Added To Wishlist')
+        alert('Already Added To Wishlist')
     }
     else{
         wishList.push(id);
         const wishListStr = JSON.stringify(wishList);
         localStorage.setItem("wish-list",wishListStr);
-        toast.success('Add To Wishlist')
+        alert('Add To Wishlist')
     }
 }
 export { addStoredCart, getStoredCart,getWishList,addWishList };

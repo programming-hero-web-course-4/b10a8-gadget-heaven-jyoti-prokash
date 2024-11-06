@@ -1,18 +1,46 @@
 [
     {
-        "id": 1,
-        "category": "Smartphone"
+        "product_id": 1,
+        "product_title": "Dell XPS 13",
+        "product_image": "https://i.ibb.co.com/d2bjDP6/apple-macbook-air-m3-cnnu-lead-options-8.jpg",
+        "category": "laptop",
+        "price": 1299,
+        "description": "Powerful and compact laptop with InfinityEdge display.",
+        "Specification": ["Intel i7", "13.4-inch FHD+", "512GB SSD"],
+        "availability": false,
+        "rating": 4.7
     },
     {
-        "id": 2,
-        "category": "Tablet"
-    },
-    {
-        "id": 3,
-        "category": "Laptop"
-    },
-    {
-        "id": 4,
-        "category": "Smartwatch"
-    }
+        "product_id": 2,
+        "product_title": "iPhone 13 Pro",
+        "product_image": "https://i.ibb.co.com/cYFLdFP/i.jpg",
+        "category": "iphone",
+        "price": 999,
+        "description": "Latest iPhone model with a powerful A15 chip and triple camera system.",
+        "Specification": ["6.1-inch Super Retina XDR", "128GB Storage", "5G Support"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": 3,
+        "product_title": "MacBook Pro 14",
+        "product_image": "https://i.ibb.co.com/d2bjDP6/apple-macbook-air-m3-cnnu-lead-options-8.jpg",
+        "category": "macBook",
+        "price": 1999,
+        "description": "Powerful MacBook Pro with M1 Pro chip and high-resolution display.",
+        "Specification": ["M1 Pro Chip", "14-inch Liquid Retina XDR", "512GB SSD"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": 4,
+        "product_title": "Apple Watch Series 7",
+        "product_image": "https://i.ibb.co.com/d2bjDP6/apple-macbook-air-m3-cnnu-lead-options-8.jpg",
+        "category": "smart watch",
+        "price": 399,
+        "description": "Smart watch with health tracking and fitness features.",
+        "Specification": ["Always-On Retina Display", "GPS", "Heart Rate Monitor"],
+        "availability": true,
+        "rating": 4.8
+      }
 ]
