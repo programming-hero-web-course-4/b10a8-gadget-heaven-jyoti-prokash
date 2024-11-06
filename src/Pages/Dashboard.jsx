@@ -16,10 +16,7 @@ const Dashboard = () => {
     );
     setCartList(storeCart);
   }, []);
-
-
 //   wishlist
-
   const [wishList,setWishList] = useState([])
   useEffect(()=>{
     const storeWishList = getWishList()
@@ -32,7 +29,7 @@ const Dashboard = () => {
 
   const handleShort = sortBy => {
     if(sortBy=='price'){
-      const sorted = [...allData].sort((a,b)=>b.price-a.price);
+      const sorted = [...cartList].sort((a,b)=>b.price-a.price);
       setCartList(sorted);
     }
   }
@@ -47,9 +44,9 @@ const Dashboard = () => {
       </div>
       <div>
         <Tabs>
-          <TabList>
-            <Tab>Cart</Tab>
-            <Tab>Wishlist</Tab>
+          <TabList className="flex justify-center ">
+            <Tab className="font-bold text-xl btn mt-5 px-[50px] mr-10">Cart</Tab>
+            <Tab className="font-bold text-xl btn mt-5 px-[50px]">Wishlist</Tab>
           </TabList>
 
           <TabPanel>
@@ -61,7 +58,9 @@ const Dashboard = () => {
                   </h2>
                 </div>
                 <div className="flex gap-5 justify-center items-center">
-                  <h2 className="mr-5 text-2xl font-bold">Total cost: 0</h2>
+                  <h2 className="mr-5 text-2xl font-bold">Total cost: 0
+          
+                  </h2>
                   <button onClick={()=>handleShort('price')} className="btn rounded-3xl border-[#9538E2] text-[#9538E2] text-lg font-semibold">
                     Sort By price
                   </button>
@@ -72,8 +71,8 @@ const Dashboard = () => {
               </div>
 
               <div>
-                {cartList.map((cart) => (
-                  <div className="flex items-center border-2 rounded-2xl gap-4 mt-5">
+                {cartList.map((cart,productId) => (
+                  <div key={cart.productId} className="flex items-center border-2 rounded-2xl gap-4 mt-5">
                     <div>
                       <img
                         className="w-[180px] p-2 rounded-xl"
@@ -95,8 +94,8 @@ const Dashboard = () => {
             <div>
                 <h1 className="text-2xl font-bold">Wishlist :</h1>
                     {
-                        wishList.map(wish =>(
-                            <div className="flex items-center border-2 rounded-2xl gap-4 mt-5">
+                        wishList.map((wish,productId) =>(
+                            <div key={wish.productId} className="flex items-center border-2 rounded-2xl gap-4 mt-5">
                     <div>
                       <img
                         className="w-[180px] p-2 rounded-xl"

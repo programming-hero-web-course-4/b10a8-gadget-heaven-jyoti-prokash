@@ -11,7 +11,6 @@ const data = useLoaderData();
 const product  = data.find(gadget => id === gadget.productId)
 const {title,image,price,availability,description,specifications,rating} = product;
 
-
 const handleCart = (id) =>{
         addStoredCart(id)
     }
@@ -19,12 +18,15 @@ const handleWishList = (id) =>{
     addWishList(id)
 } 
 
-
-
     return (
-        <div className='flex gap-4 items-center p-8 border-2 rounded-2xl m-40'>
+        <div>
+            <div className='text-center bg-[#9538E2] text-white pb-40 relative'>
+                    <h1 className='pt-10 text-3xl font-bold mb-5'>Product Details</h1>
+                    <p className=''>Explore the latest gadgets that will take your experience to <br /> the next level. From smart devices to the coolest accessories, we have it all!</p>
+            </div>
+            <div className='flex gap-4 items-center p-8 border-2 rounded-2xl lg:m-20 bg-gray-100 absolute top-40 left-96 w-3/6'>
             <div>
-                    <img className='w-4/6' src={image} alt="" />
+                    <img className='w-4/6 rounded-xl' src={image} alt="" />
             </div>
             <div className='space-y-4 w-5/6'>
                     <h1 className='text-4xl font-bold'>{title}</h1>
@@ -41,6 +43,7 @@ const handleWishList = (id) =>{
                     <button onClick={()=>handleWishList(productId)} className='btn btm-sm rounded-full'><FaRegHeart /></button>
                     </div>
             </div>
+        </div>
         </div>
     );
 };

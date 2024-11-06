@@ -10,6 +10,7 @@ import Dashboard from './Pages/Dashboard';
 import GadgetDetails from './Components/GadgetDetails';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Contact from './Components/Contact';
 
 
 const router = createBrowserRouter([
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
     {
       path: "dashboard",
       element: <Dashboard></Dashboard>,
+      loader: () => fetch('/gadget.json'),
+    },
+    {
+      path: "/contact",
+      element: <Contact></Contact>,
       loader: () => fetch('/gadget.json'),
     },
     ]

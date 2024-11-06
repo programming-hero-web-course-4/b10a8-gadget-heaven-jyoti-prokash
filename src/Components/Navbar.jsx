@@ -13,10 +13,13 @@ const Navbar = () => {
       <li>
         <NavLink to="dashboard">Dashboard</NavLink>
       </li>
+      <li>
+        <NavLink to="/contact">Contact Us</NavLink>
+      </li>
     </>
   );
   return (
-    <div className="navbar">
+    <div className="navbar mt-2">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
