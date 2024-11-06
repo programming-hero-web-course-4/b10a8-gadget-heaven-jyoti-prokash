@@ -13,7 +13,7 @@ const Home = () => {
             <Gadget></Gadget>
             <div className="flex flex-col md:flex-row gap-4">
                 {/* categories section */}
-                <div className='p-6 w-48 bg-gray-300 rounded-xl'>
+                <div className='p-6 w-48 bg-blue-100 h-[230px] rounded-xl'>
                     <Categories categories={categories}></Categories>
                 </div>
                 {/* sub outlet section */}

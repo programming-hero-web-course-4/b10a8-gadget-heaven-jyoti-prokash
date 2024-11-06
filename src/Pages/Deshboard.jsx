@@ -4,11 +4,17 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { getAllCard, getAllWish } from "../components/utilities";
 import { TiDeleteOutline } from "react-icons/ti";
+import Heading from "../components/Heading";
 
 const Deshboard = () => {
 
     const [product, setProduct] = useState([]);
-
+    // console.log(product)
+    const [productPrice, setProductPrice] = useState(0);
+    useEffect(() => {
+        const sum = product.reduce((accumulator, item) => accumulator + (item.price || 0), 0);
+        setProductPrice(sum);
+    }, [product]);
     useEffect(() => {
         const card = getAllCard()
         setProduct(card)
@@ -27,27 +33,44 @@ const Deshboard = () => {
         }
     }
 
+    const confirmPurchase = () => {
+        setProduct([]);  // Clear products
+        setProductPrice(0);  // Reset price
+        document.getElementById('my_modal_5').close();  // Close modal
+    };
+
+
     return (
         <div>
-            <div>
-                <h2 className="text-center text-3xl font-bold mt-6">deshboard</h2>
-                <p className="text-center py-4 w-7/12 mx-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
-
-
+            <div className="m-5">
+            <Heading title={`Dash Board`} subtitle={`Dashboard Overview: Access real-time data, monitor trends, and analyze key metrics, all in one streamlined platform for smarter decision-making.`}></Heading>
             </div>
+            
             <div>
                 <Tabs>
                     <TabList className="flex justify-center gap-4">
-                        <Tab className="btn">Card</Tab>
-                        <Tab className="btn">WishList</Tab>
+                        <Tab className="btn px-[40px]">Card</Tab>
+                        <Tab className="btn px-[40px]">WishList</Tab>
                     </TabList>
 
                     <TabPanel>
                         <div>
                             <div className="flex w-10/12 mx-auto my-6 gap-4 items-center justify-end">
-                                <h2 className="text-xl font-bold">Total cost : <span></span></h2>
+                                <h2 className="text-xl font-bold">Total cost :{productPrice} <span></span></h2>
                                 <button onClick={() => handleSort('price')} className="btn">Sort by Price</button>
-                                <button className="btn">Purchase</button>
+                                <div>
+                                    <button className="btn" onClick={() => document.getElementById('my_modal_5').showModal()}>Purchase</button>
+                                    <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+                                        <div className="modal-box">
+                                            <h3 className="font-bold text-2xl text-center">Payment Successfully</h3>
+                                            <p className="text-center mt-4">Thanks for purchasing</p>
+                                            <p className="py-4 text-center">Total cost: ${productPrice}</p>
+                                            <div className="modal-action justify-center">
+                                                <button className="btn" onClick={confirmPurchase}>Close</button>
+                                            </div>
+                                        </div>
+                                    </dialog>
+                                </div>
                             </div>
                             {
                                 product.map(product => (
